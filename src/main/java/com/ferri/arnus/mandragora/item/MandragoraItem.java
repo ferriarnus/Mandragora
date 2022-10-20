@@ -1,4 +1,4 @@
-package com.ferri.arnus.examplemod.item;
+package com.ferri.arnus.mandragora.item;
 
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;

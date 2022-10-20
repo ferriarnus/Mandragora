@@ -1,4 +1,4 @@
-package com.ferri.arnus.examplemod.network;
+package com.ferri.arnus.mandragora.network;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;

@@ -1,6 +1,6 @@
-package com.ferri.arnus.examplemod.network;
+package com.ferri.arnus.mandragora.network;
 
-import com.ferri.arnus.examplemod.Mandragora;
+import com.ferri.arnus.mandragora.Mandragora;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.simple.SimpleChannel;

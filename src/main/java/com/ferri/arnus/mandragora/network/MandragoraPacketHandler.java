@@ -1,9 +1,8 @@
-package com.ferri.arnus.examplemod.network;
+package com.ferri.arnus.mandragora.network;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraftforge.network.NetworkEvent;

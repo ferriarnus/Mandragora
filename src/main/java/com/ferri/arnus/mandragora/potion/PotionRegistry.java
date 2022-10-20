@@ -1,10 +1,9 @@
-package com.ferri.arnus.examplemod.potion;
+package com.ferri.arnus.mandragora.potion;
 
-import com.ferri.arnus.examplemod.Mandragora;
+import com.ferri.arnus.mandragora.Mandragora;
 import net.minecraft.core.Registry;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;

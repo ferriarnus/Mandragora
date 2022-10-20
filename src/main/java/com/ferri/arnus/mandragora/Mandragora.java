@@ -1,17 +1,15 @@
-package com.ferri.arnus.examplemod;
+package com.ferri.arnus.mandragora;
 
-import com.ferri.arnus.examplemod.block.BlockRegistry;
-import com.ferri.arnus.examplemod.item.ItemRegistry;
-import com.ferri.arnus.examplemod.network.MandragoraChannel;
-import com.ferri.arnus.examplemod.network.MandragoraPacket;
-import com.ferri.arnus.examplemod.potion.PotionRegistry;
+import com.ferri.arnus.mandragora.block.BlockRegistry;
+import com.ferri.arnus.mandragora.item.ItemRegistry;
+import com.ferri.arnus.mandragora.network.MandragoraChannel;
+import com.ferri.arnus.mandragora.network.MandragoraPacket;
+import com.ferri.arnus.mandragora.potion.PotionRegistry;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

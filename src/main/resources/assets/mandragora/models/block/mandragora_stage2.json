@@ -2,6 +2,6 @@
   "parent": "minecraft:block/crop",
   "render_type": "cutout",
   "textures": {
-    "crop": "mandragora:block/mandragora_stage0"
+    "crop": "mandragora:block/mandragora_stage2"
   }
 }

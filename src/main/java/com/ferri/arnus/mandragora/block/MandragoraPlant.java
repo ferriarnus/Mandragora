@@ -1,4 +1,4 @@
-package com.ferri.arnus.examplemod.block;
+package com.ferri.arnus.mandragora.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;

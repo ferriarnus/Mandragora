@@ -1,14 +1,10 @@
-package com.ferri.arnus.examplemod.item;
+package com.ferri.arnus.mandragora.item;
 
-import com.ferri.arnus.examplemod.Mandragora;
+import com.ferri.arnus.mandragora.Mandragora;
 import net.minecraft.core.Registry;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.RegistryObject;
 
 public class ItemRegistry {
 
