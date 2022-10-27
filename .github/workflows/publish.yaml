@@ -26,7 +26,7 @@ jobs:
       - name: Publish Mandragora 
         uses: Kir-Antipov/mc-publish@v2.1
         with:
-          curseforge-id: 690188
+          curseforge-id: 546217
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           files-primary: build/libs/!(*-@(dev|sources)).jar
           files-secondary: build/libs/*-@(dev|sources).jar
