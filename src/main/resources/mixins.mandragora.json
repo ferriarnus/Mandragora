@@ -5,7 +5,9 @@
   "refmap": "mixins.mandragora.refmap.json",
   "mixins": [
     "SensingMixin",
-    "ItemEntityMixin"
+    "ItemEntityMixin",
+    "AnimalMixin",
+    "PanicGoalMixin"
   ],
   "minVersion": "0.8.4"
 }
