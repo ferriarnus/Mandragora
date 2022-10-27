@@ -5,6 +5,7 @@ import com.ferri.arnus.mandragora.item.ItemRegistry;
 import com.ferri.arnus.mandragora.network.MandragoraChannel;
 import com.ferri.arnus.mandragora.network.MandragoraPacket;
 import com.ferri.arnus.mandragora.potion.PotionRegistry;
+import com.ferri.arnus.mandragora.tag.MandragoraTags;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -30,6 +31,7 @@ public class Mandragora {
         BlockRegistry.register();
         PotionRegistry.register();
         MandragoraChannel.register();
+        MandragoraTags.init();
     }
 
     @SubscribeEvent
