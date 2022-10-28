@@ -5,6 +5,7 @@ import com.ferri.arnus.mandragora.block.BlockRegistry;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.animal.Animal;
@@ -40,7 +41,7 @@ public abstract class AnimalMixin extends AgeableMob implements FeedMandragora {
                 return;
             }
             this.mandragora = 1 + pPlayer.level.getRandom().nextInt(4);
-            pPlayer.playSound(SoundEvents.SCULK_SHRIEKER_SHRIEK, 2, 0.6F + pPlayer.level.getRandom().nextFloat() * 0.4F);
+            this.playHurtSound(DamageSource.playerAttack(pPlayer));
             this.usePlayerItem(pPlayer, pHand, itemstack);
             cir.setReturnValue(InteractionResult.SUCCESS);
 
