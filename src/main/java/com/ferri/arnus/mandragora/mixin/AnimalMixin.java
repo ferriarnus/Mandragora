@@ -2,7 +2,6 @@ package com.ferri.arnus.mandragora.mixin;
 
 import com.ferri.arnus.mandragora.FeedMandragora;
 import com.ferri.arnus.mandragora.block.BlockRegistry;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
