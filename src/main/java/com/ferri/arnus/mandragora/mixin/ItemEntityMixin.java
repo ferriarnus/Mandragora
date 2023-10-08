@@ -28,8 +28,8 @@ public abstract class ItemEntityMixin extends Entity {
 
     @Inject(at = @At("HEAD"), method = "tick")
     public void scream(CallbackInfo ci) {
-        if (this.getItem().is(BlockRegistry.MANDRAGORA_ITEM.get()) && this.level.getGameTime() % 20 == 0 && !this.level.isClientSide) {
-            MandragoraChannel.INSTANCE.send(PacketDistributor.TRACKING_ENTITY_AND_SELF.with(() -> this), new MandragoraPacket(0.6F + this.level.getRandom().nextFloat() * 0.4F, this.blockPosition(), false));
+        if (this.getItem().is(BlockRegistry.MANDRAGORA_ITEM.get()) && this.level().getGameTime() % 20 == 0 && !this.level().isClientSide) {
+            MandragoraChannel.INSTANCE.send(PacketDistributor.TRACKING_ENTITY_AND_SELF.with(() -> this), new MandragoraPacket(0.6F + this.level().getRandom().nextFloat() * 0.4F, this.blockPosition(), false));
         }
     }
 }

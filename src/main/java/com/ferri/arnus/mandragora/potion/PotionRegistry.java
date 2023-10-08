@@ -7,11 +7,12 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class PotionRegistry {
 
-    private static final DeferredRegister<Potion> POTIONS = DeferredRegister.create(Registry.POTION_REGISTRY, Mandragora.MODID);
+    private static final DeferredRegister<Potion> POTIONS = DeferredRegister.create(ForgeRegistries.POTIONS, Mandragora.MODID);
 
     public static void register() {
         POTIONS.register(FMLJavaModLoadingContext.get().getModEventBus());

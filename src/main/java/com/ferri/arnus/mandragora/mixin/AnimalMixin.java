@@ -35,12 +35,12 @@ public abstract class AnimalMixin extends AgeableMob implements FeedMandragora {
     public void feedMandragora(Player pPlayer, InteractionHand pHand, CallbackInfoReturnable<InteractionResult> cir) {
         ItemStack itemstack = pPlayer.getItemInHand(pHand);
         if (itemstack.is(BlockRegistry.MANDRAGORA_ITEM.get())) {
-            if (this.level.isClientSide) {
+            if (this.level().isClientSide) {
                 cir.setReturnValue(InteractionResult.CONSUME);
                 return;
             }
-            this.mandragora = 1 + pPlayer.level.getRandom().nextInt(4);
-            this.playHurtSound(DamageSource.playerAttack(pPlayer));
+            this.mandragora = 1 + pPlayer.level().getRandom().nextInt(4);
+            this.playHurtSound(this.damageSources().playerAttack(pPlayer));
             this.usePlayerItem(pPlayer, pHand, itemstack);
             cir.setReturnValue(InteractionResult.SUCCESS);
 

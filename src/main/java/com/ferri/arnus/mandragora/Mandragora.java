@@ -45,7 +45,7 @@ public class Mandragora {
                     darkness = true;
                 }
                 MandragoraChannel.INSTANCE.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()), new MandragoraPacket(pitch, event.getPos(), darkness));
-                event.getLevel().addFreshEntity(new ItemEntity(event.getPlayer().level, event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(BlockRegistry.MANDRAGORA_ITEM.get())));
+                event.getLevel().addFreshEntity(new ItemEntity(event.getPlayer().level(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), new ItemStack(BlockRegistry.MANDRAGORA_ITEM.get())));
             }
     	}
     	
